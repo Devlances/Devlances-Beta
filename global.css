@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('imgs/background3.png'); /* Resmin yolunu güncelleyin */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: Poppins;
+}
+
+:root {
+    --white: #ffffff;
+    --header: #0F0F0F;
+    --stroke: #22302C;
+    --lost: #122221;
+    --lost-green: #44C6AC;
+    --parag: #939393;
+  }
+
+
+/* Header */ 
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.text-white {
+  color: var(--white);
+  font-size: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+  font-family: Poppins, sans-serif;
+  background-color: var(--header);
+}
+
+nav a {
+  margin-left: 45px;
+  font-family: Poppins;
+  color: #878787;
+}
+
+nav a:hover {
+  margin-left: 45px;
+  font-family: Poppins;
+  color: #fff;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  width: 132px;
+  height: 41px;
+  border-radius: 50px;
+  border: 1px solid #2A2A2A;
+  background: #1F1F1F;
+  color: var(--white);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Header */
+
+
+/* Learn More */
+.saves-rec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 41px;
+  border-radius: 50px;
+  border: 1px solid var(--stroke);
+  background: #122221;
+  cursor: pointer;
+}
+
+.saves-rec img {
+  width: 13px;
+  cursor: pointer;
+}
+
+.saves-rec p {
+  color: #4FAE99;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+.btn-new {
+  width: 58px;
+  height: 34px;
+  border-radius: 50px;
+  background: #44C6AC;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Learn More */
+
+/* Home Text */
+.home-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.home-text h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.2em;
+  line-height: 1;
+}
+
+.home-text p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--parag);
+  margin-top: 1em; 
+}
+
+.home-button {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-home {
+  width: 112px;
+  height: 43px;
+  border-radius: 50px;
+  background: #FFF;
+  border: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-home:hover {
+  transform: translateY(-5px);
+}
+
+.reviews img{
+  transition: transform 0.3s ease;
+}
+.reviews img:hover {
+  transform: translateY(-5px);
+}
+
+
+.home-button h2 {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home-button h2 {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.home-button img {
+  width: 13px;
+  cursor: pointer;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.reviews p{
+color: #8C8C8C;
+}
+
+.example-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 42px;
+}
+
+.example-image img {
+  animation:glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+      opacity: 0.5;
+  }
+  to {
+      transform: rotate(180deg);
+      opacity: 0.5;
+  }
+}
+
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+  }
+  to {
+      box-shadow: 0 0 20px 10px #1F1F1F, 0 0 30px 15px #1F1F1F, 0 0 40px 20px #1F1F1F;
+  }
+}
+
+/* Home Text */
